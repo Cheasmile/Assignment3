@@ -1,8 +1,8 @@
-version: '3'
-
 services:
   website:
-    build: .
+    image: nginx:alpine
+    container_name: assignment3-website
     ports:
       - "80:80"
-      
+    volumes:
+      - ./:/usr/share/nginx/html
