@@ -18,6 +18,3 @@ jobs:
 
       - name: Build and start new container
         run: docker compose up -d --build
-
-      - name: Show containers
-        run: docker ps
